@@ -8,14 +8,21 @@ allowBuilds:
   bun: true
   deno: true
 
+minimumReleaseAgeExclude:
+  - vite-plus
+  - '@voidzero-dev/*'
+
 catalog:
   '@anthropic-ai/sandbox-runtime': 0.0.75
+  '@fastify/busboy': 3.2.2
   '@openai/codex': 0.154.0
   '@tsconfig/strictest': ^2.0.8
   '@types/node': 25.0.3
   '@playwright/browser-chromium': 1.63.0
   '@vitest/browser-playwright': 4.1.11
   bun: 1.4.2
+  cbor-edn: 0.2.2
+  cbor2: 1.11.0
   cross-env: ^10.1.0
   deno: 2.9.6
   husky: ^9.1.7
@@ -26,8 +33,8 @@ catalog:
   # Playwright 1.52 pins the browser package to Chromium 136.
   playwright: 1.63.0
   typescript: ^6.0.3
-  vite: npm:@voidzero-dev/vite-plus-core@0.3.2
-  vite-plus: 0.3.2
+  vite: npm:@voidzero-dev/vite-plus-core@0.3.3
+  vite-plus: 0.3.3
   vitest: 4.1.11
 
 catalogMode: prefer
